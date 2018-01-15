@@ -1,0 +1,63 @@
+span {
+	font-size: 24px;
+	display: inline-block;
+	margin-top: 1px;
+}
+
+input[type="text"] {
+	width: 400px;
+	height: 40px;
+	font-size: 17px;
+}
+
+#stripe {
+	text-align: center;
+	margin: 5px 0;
+	height: 40px;
+}
+
+#quit {
+	margin-right: 70px;
+}
+
+#skip {
+	margin-left: 40px;
+	margin-right: 70px;
+	margin-bottom: 5px;
+}
+
+#map {
+    height: 40.25em;
+    width: 100%;
+}
+
+@media (max-width: 1200px) and (orientation:portrait) {
+
+#map {
+	height: 1350px;
+}
+
+#skip {
+	margin-bottom: 3px;
+}
+}
+
+@media (max-width: 1200px) and (orientation:landscape) {
+
+#map {
+	height: 440px;
+}
+
+#skip {
+	margin-bottom: 3px;
+}
+}
+
+#home {
+	margin-top: 30px;
+	margin-bottom: 80px;
+}
+
+#fb {
+	margin-right: 60px;
+}

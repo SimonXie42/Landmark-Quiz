@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="auto-complete.css">
+</head>
+
+<body>
+
+    <div class="ui dimmer">
+        <div class="content">
+            <div class="center">
+                <h2 class="ui inverted icon header">
+                    <i class="flag checkered icon"></i> Thanks for playing! You earned <span id="final_score"></span> points in total.
+                </h2>
+                <br>
+                <a href="index.html"><button id="home" class="ui inverted button">Home</button></a>
+                <div id="share">
+                    <button id="fb" class="ui circular facebook icon button">
+                        <i class="facebook icon"></i>
+                    </button>
+                    <button class="ui circular twitter icon button">
+                        <i class="twitter icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stripe">
+        <button id="go" class="positive large ui button">Go!</button>
+        <input id="field" type="text" placeholder="Which sight/landmark is this? Type your answer here.">
+
+        <div id="skip" class="large ui animated button" tabindex="0">
+            <div class="visible content">Skip</div>
+            <div class="hidden content">
+                <i class="right arrow icon"></i>
+            </div>
+        </div>
+        <button id="quit" class="negative large ui button">Quit</button>
+        <span>Score: <span id = "score"> 0</span>/10 </span>    <!-- Can't use p or h2 tag because it'll end up in a new line -->
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+    <script src="auto-complete.min.js"></script>
+    <script src="app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ6I1QGM_HLY1osp3yb9vIJ1EG0p75xuc&callback=initMap">
+    </script>
+</body>
+
+</html>
